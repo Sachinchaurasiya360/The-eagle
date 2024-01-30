@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Video</title>
+    <link rel="stylesheet" href="/static/css/ui.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-logo">
+        <img src="/static/images/raj-police.png" alt="" />
+      </div>
+      <div class="nav-list">
+        <li><a href="/FrontPage"> Video</a></li>
+        <li><a href="/home"> Back</a></li>
+      </div>
+    </div>
+
+    <div class="frame">
+      <div class="Live-system">
+        <img src="{{ url_for('cam3') }}" alt="Upload video" />
+      </div>
+      <div class="Live-system">
+        <img src="{{ url_for('webap') }}" alt="Upload video" />
+      </div>
+      <div class="Live-system">
+        <img src="{{ url_for('cam2') }}" alt="Upload video" />
+      </div>
+      <div class="Live-system">
+        <img src="{{ url_for('webapp') }}" alt="Upload video" />
+      </div>
+    </div>
+  </body>
+</html>

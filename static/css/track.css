@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@300&family=Josefin+Sans:wght@300&family=Overlock+SC&display=swap');
+
+:root{
+    --primary-color: #131313; 
+    --secondary-color: #0D7377; 
+    --accent-color: #42424211;
+    --text-co:#14FFEC;
+    --text-color:#ffff;
+  }
+  body{
+    background:linear-gradient(to right, #00796b, #673ab7);
+  }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 10rem 1fr 1.5fr 1fr 10rem;
+    height: 10rem;
+    width: 100%;
+    color:white;
+    background-color: black;
+    font-size: 2rem;
+}
+.nav-logo{
+     display: grid;
+     justify-content: center;
+    grid-column: 2/3;
+    img{
+        height: 100px;
+        width: 100px;
+    }
+}
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 4/5;
+    font-family: "Overlock SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    li{        
+        color:var(--text-co);
+        text-align: center;       
+        margin: 0 2rem;
+        display: flex;
+        justify-content: space-between;
+        a{  
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 5rem;
+            width:15rem;
+            font-size: 2.2rem;
+            color: var(--text-color);
+            border:0.2rem inset var(--text-co);
+            border-radius: 0.5rem;
+            transition: 0.8s ;
+        }
+    }
+    
+}
+.nav-list li a:hover{
+    color: var(--text-co);
+    box-shadow: 0 1.8rem 2rem 0 var(--text-co);
+}
+.main{
+    display: flex;
+}.frame{
+ 
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  
+  }
+  .Live-system {
+    height: 30rem;
+    width: 60rem;
+    background-color: #131313;
+    margin: 3rem 4rem;
+    border-radius: 0.5rem;
+  
+    img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 59rem;
+      height: 29rem;
+      border-radius: 35px;
+      object-fit: cover;
+      padding: 1rem;
+    }
+  }
+  
+  

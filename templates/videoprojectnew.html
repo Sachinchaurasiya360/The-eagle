@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video</title>
+    <link rel="stylesheet" href="/static/css/videoproject.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="nav-logo">
+        <img src="/static/images/raj-police.png" alt="">
+    </div>
+    <div class="nav-list">
+        <li><a href="/FrontPage"> video </a></li>
+        <li><a href="/webcam"> Live webcam </a></li>
+        <li><a href="/"> Back </a></li>
+    </div>
+</div>
+<div class="main">
+   <div class="output-video">
+    <img src="{{ url_for('video') }}"   alt="Upload video">
+   </div>
+</div>
+<section>
+    <div class="new" >
+      <form method = 'POST' enctype="multipart/form-data" style="align-content: center; text-align: center;display: flex;">
+        {{form.hidden_tag()}}
+        {{form.file(class_="custom-file-input")}}
+         
+        <div>
+        <button type="submit" name="favorite" value="x" class="btnCustom">
+            Submit
+        </button>
+      </div>
+      </form>
+    </div>

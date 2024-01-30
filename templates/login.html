@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login form</title>
+    <style>
+      @import url("http://fonts.cdnfonts.com/css/sansation");
+      @import url("https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .contact-container {
+        background-image: url("https://raw.githubusercontent.com/smthari/Frontend-Projects/master/Responsive%20login%20form/Images/bg.svg");
+        background-size: cover;
+        height: 100vh;
+      }
+
+      .right {
+        position: absolute;
+        width: 360px;
+        left: 60%;
+        height: 580px;
+        top: calc(50% - 580px / 2);
+        background: #ffffff;
+        border-radius: 25px;
+        text-align: center;
+      }
+
+      .title {
+        font-family: Sansation;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 145px;
+        align-items: center;
+        font-family: "Sansation", sans-serif;
+        color: #5754dd;
+      }
+
+      .logo {
+        width: 120px;
+        height: 120px;
+        margin-top: -40px;
+      }
+
+      .form-container {
+        padding: 20px;
+      }
+
+      .username,
+      .password {
+        position: relative;
+        margin: 15px;
+      }
+
+      .icon {
+        position: absolute;
+        padding: 24px 32px;
+        height: 75px;
+        width: 90px;
+      }
+
+      .user-input,
+      .pass-input {
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 20px;
+        color: #85b6ff;
+        padding: 20px 10px 20px 5px;
+        border: 2px solid #568aee;
+        width: 280px;
+        height: 45px;
+        margin: 15px;
+        border-radius: 25px;
+        box-sizing: border-box;
+        text-align: center;
+        overflow: hidden;
+        font-family: "Scheherazade New", serif;
+      }
+
+      .keepme {
+        margin: 15px;
+        color: #71a1bd;
+        font-family: "Scheherazade New", serif;
+        font-weight: bold;
+      }
+
+      .button {
+        width: 260px;
+        height: 45px;
+        font-family: "Sansation", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        cursor: pointer;
+        color: #ffffff;
+        border: none;
+        background: rgba(135, 113, 224, 0.89);
+        border-radius: 25px;
+      }
+
+      .button:hover {
+        background-color: rgb(45, 28, 235);
+      }
+
+      .link {
+        text-align: center;
+        display: block;
+        margin: 18px;
+        color: #71a1bd;
+        font-family: "Scheherazade New", serif;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      @media only screen and (max-width: 700px) {
+        .contact-container {
+          background: linear-gradient(138.56deg, #318adc 23.44%, #88183a 89.5%);
+        }
+        .right {
+          left: calc(68% - 500px / 2);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="contact-container">
+      <div class="right">
+        <h1 class="title">Sign Into Account</h1>
+        <img
+          class="logo"
+          src="https://upload.wikimedia.org/wikipedia/en/c/c4/Rajasthan_Police_Logo.png"
+          alt="Bad internet"
+        />
+        <div class="form-container">
+          <div class="username">
+            <img
+              class="icon email-icon"
+              src="https://raw.githubusercontent.com/smthari/Frontend-Projects/master/Responsive%20login%20form/icons/email.svg"
+              alt=""
+            />
+            <input type="email" class="user-input" placeholder="E-Mail" />
+          </div>
+          <div class="password">
+            <img
+              class="icon password-icon"
+              src="https://raw.githubusercontent.com/smthari/Frontend-Projects/master/Responsive%20login%20form/icons/password%20lock.svg"
+              alt=""
+            />
+            <input type="password" class="pass-input" placeholder="Password" />
+          </div>
+          <div class="keepme">
+            <input type="checkbox" checked="true" />
+            Keep Me Logged In
+          </div>
+
+          <form action="/home" method="post">
+            <input type="submit" value="Submit" class="button" />
+          </form>
+
+          <a href="/home" class="link">Forgot Password</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
