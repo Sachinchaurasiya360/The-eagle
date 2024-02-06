@@ -11,7 +11,7 @@ This project is developed by Team Code Hunter, and it is designed for rajashtan 
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/Sachinchaurasiya360/rajshtan-police-hackathon
+   git clone https://github.com/Sachinchaurasiya360/code-hunter
    ```
 
 2. Install the required packages:

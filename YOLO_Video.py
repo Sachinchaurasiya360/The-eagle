@@ -75,7 +75,7 @@ def video_detection(video_source):
 
     # Check if GPU is available for TensorFlow
     if tf.test.is_gpu_available():
-        print("GPU is available for TensorFlow")
+        print("GPU hai tere me bro")
         violence_model = tf.keras.models.clone_model(violence_model)
         violence_model.compile(
             optimizer="adam", loss="binary_crossentropy", metrics=["accuracy"]
