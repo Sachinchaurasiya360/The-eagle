@@ -78,30 +78,6 @@ This Flask application implements a video surveillance system that utilizes the 
 - `generate_frames(path_x="")`: Generates frames from the video stream obtained from the specified path. Uses the `video_detection` function from the `YOLO_Video` module.
 - `generate_frames_web(path_x)`: Generates frames from the webcam or external camera video stream using the `video_detection` function.
 
-#### Routes and Views
-- `/`: Displays the login page.
-- `/home`: Displays the main project page.
-- `/webcam`: Displays the webcam interface.
-- `/track`: Displays the object tracking interface.
-- `/attendance` (POST): Fetches attendance data based on the selected date from the SQLite database.
-- `/FrontPage`:
-  - Displays the file upload form.
-  - Saves the uploaded video file and sets the session variable for the video path.
-- `/video`:
-  - Streams frames from the uploaded video file.
-  - Uses the `generate_frames` function.
-- `/webapp`:
-  - Streams frames from the webcam.
-  - Uses the `generate_frames_web` function.
-- `/webap`:
-  - Streams frames from an external camera (camera 1).
-  - Uses the `generate_frames_web` function.
-- `/cam2`:
-  - Streams frames from an external camera (camera 2).
-  - Uses the `generate_frames_web` function.
-- `/cam3`:
-  - Streams frames from an external camera (camera 3).
-  - Uses the `generate_frames_web` function.
 
 #### Video Surveillance Features
 - Object detection is performed in real-time using the YOLO model.
