@@ -64,21 +64,20 @@ def webcam():
 
 
 
-@app.route("/webapp")
-def webapp():
+@app.route("/internal_camera")
+def internal_camera():
     return Response(
         generate_frames_web(path_x=0),
         mimetype="multipart/x-mixed-replace; boundary=frame",
     )
     
-@app.route("/webap") #external camera
-def webap():
+@app.route("/external_camera") #external camera
+def external_camera():
     return Response(
         generate_frames_web(path_x=1),
         mimetype="multipart/x-mixed-replace; boundary=frame",
 
      )
-
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -22,14 +22,19 @@
         </div>
     </div>
 
+    <div id="webcamera">
+        <div class="Live-system">
+            <img src="{{ url_for('internal_camera') }}"   alt="Upload video">
+            
+        </div>
+        
 
-   <div class="Live-system">
-    <img src="{{ url_for('webap') }}"   alt="Upload video">
-    
-</div>
+        <div class="Live-system">
+            <img src="{{ url_for('external_camera') }}"   alt="Upload video">
+        </div>
 
-<div class="Live-system">
-    <img src="{{ url_for('webapp') }}"   alt="Upload video">
+    </div>
+   
     
 </div>
 </div>
