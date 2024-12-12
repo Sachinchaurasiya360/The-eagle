@@ -46,3 +46,5 @@ This project is developed by Team Code Hunter, and it is designed for rajashtan 
 Our trained model which is best.pt it is pt file so make sure it is valid in your system beacuse sometime it crash during the downloading.
 
 
+
+khdx gokg ofdz oblz
